@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		153FDE291DD063FD1A929703 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837E8DB1140E3C18464FF6A5 /* Pods_Makestagram.framework */; };
 		310CB5491D1DA43F006B70FE /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310CB5481D1DA43F006B70FE /* PhotoTakingHelper.swift */; };
+		3167D0051D218B4B001D9FD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3167D0041D218B4B001D9FD1 /* Post.swift */; };
 		31C805291D1CA1510063C77B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C805281D1CA1510063C77B /* TimelineViewController.swift */; };
 		31C8052B1D1CA1760063C77B /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8052A1D1CA1760063C77B /* PhotoViewController.swift */; };
 		31C8052D1D1CA1930063C77B /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8052C1D1CA1930063C77B /* FriendSearchViewController.swift */; };
@@ -65,6 +66,7 @@
 /* Begin PBXFileReference section */
 		2E1AE507EDD2D18E4D8E4173 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		310CB5481D1DA43F006B70FE /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
+		3167D0041D218B4B001D9FD1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Models/Post.swift; sourceTree = "<group>"; };
 		31C805281D1CA1510063C77B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		31C8052A1D1CA1760063C77B /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		31C8052C1D1CA1930063C77B /* FriendSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 				310CB5481D1DA43F006B70FE /* PhotoTakingHelper.swift */,
 			);
 			path = PhotoTaking;
+			sourceTree = "<group>";
+		};
+		3167D0031D218B2E001D9FD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3167D0041D218B4B001D9FD1 /* Post.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		62551B621B06BF33000913E4 /* Frameworks */ = {
@@ -224,6 +234,7 @@
 		62C8C1E21B06BD6500DC3EA7 /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				3167D0031D218B2E001D9FD1 /* Models */,
 				310CB5471D1DA3F1006B70FE /* PhotoTaking */,
 				6277189C1B0A58E800AF5C6E /* Helpers */,
 				627718811B0A581600AF5C6E /* ViewControllers */,
@@ -491,6 +502,7 @@
 				310CB5491D1DA43F006B70FE /* PhotoTakingHelper.swift in Sources */,
 				31C8052B1D1CA1760063C77B /* PhotoViewController.swift in Sources */,
 				62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */,
+				3167D0051D218B4B001D9FD1 /* Post.swift in Sources */,
 				627718971B0A581700AF5C6E /* FilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

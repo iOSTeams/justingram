@@ -1,6 +1,5 @@
-
 import UIKit
-
+import Parse
 class TimelineViewController: UIViewController {
     
     var photoTakingHelper: PhotoTakingHelper?
@@ -12,28 +11,26 @@ class TimelineViewController: UIViewController {
     }
     
     func takePhoto() {
-        print("take photo")
         // instantiate photo taking class, provide callback for when photo is selected
-        photoTakingHelper = PhotoTakingHelper(viewController: self.tabBarController!, callback: { (image: UIImage?) in
-            print("callback received")
-        })
+        photoTakingHelper = PhotoTakingHelper(viewController: self.tabBarController!) { (image: UIImage?) in
+            let post = Post()
+            post.image = image
+            post.uploadPost()
+        }
     }
 }
-
-
-
 
 // MARK: Tab Bar Delegate
 
 extension TimelineViewController: UITabBarControllerDelegate {
+    
     func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
         if (viewController is PhotoViewController) {
+            print("takePhoto")
             takePhoto()
             return false
         } else {
             return true
         }
     }
-    
-
 }
