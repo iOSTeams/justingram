@@ -12,6 +12,7 @@
 		3167D0051D218B4B001D9FD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3167D0041D218B4B001D9FD1 /* Post.swift */; };
 		3167D0091D21A953001D9FD1 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3167D0081D21A953001D9FD1 /* PostTableViewCell.swift */; };
 		3167D00F1D21AE4C001D9FD1 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3167D00E1D21AE4C001D9FD1 /* ParseHelper.swift */; };
+		31A255101D2433BA00C36781 /* FriendSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A2550F1D2433BA00C36781 /* FriendSearchTableViewCell.swift */; };
 		31C805291D1CA1510063C77B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C805281D1CA1510063C77B /* TimelineViewController.swift */; };
 		31C8052B1D1CA1760063C77B /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8052A1D1CA1760063C77B /* PhotoViewController.swift */; };
 		31C8052D1D1CA1930063C77B /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8052C1D1CA1930063C77B /* FriendSearchViewController.swift */; };
@@ -71,6 +72,7 @@
 		3167D0041D218B4B001D9FD1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Models/Post.swift; sourceTree = "<group>"; };
 		3167D0081D21A953001D9FD1 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = Views/Timeline/PostTableViewCell.swift; sourceTree = "<group>"; };
 		3167D00E1D21AE4C001D9FD1 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
+		31A2550F1D2433BA00C36781 /* FriendSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendSearchTableViewCell.swift; path = FriendSearch/FriendSearchTableViewCell.swift; sourceTree = "<group>"; };
 		31C805281D1CA1510063C77B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		31C8052A1D1CA1760063C77B /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		31C8052C1D1CA1930063C77B /* FriendSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,14 @@
 			name = Timeline;
 			sourceTree = "<group>";
 		};
+		31A2550C1D2432E300C36781 /* FriendSearch */ = {
+			isa = PBXGroup;
+			children = (
+				31A2550F1D2433BA00C36781 /* FriendSearchTableViewCell.swift */,
+			);
+			name = FriendSearch;
+			sourceTree = "<group>";
+		};
 		62551B621B06BF33000913E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +265,7 @@
 		62C8C1E21B06BD6500DC3EA7 /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				31A2550C1D2432E300C36781 /* FriendSearch */,
 				3167D0061D21A91C001D9FD1 /* Views */,
 				3167D0031D218B2E001D9FD1 /* Models */,
 				310CB5471D1DA3F1006B70FE /* PhotoTaking */,
@@ -524,6 +535,7 @@
 				310CB5491D1DA43F006B70FE /* PhotoTakingHelper.swift in Sources */,
 				31C8052B1D1CA1760063C77B /* PhotoViewController.swift in Sources */,
 				62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */,
+				31A255101D2433BA00C36781 /* FriendSearchTableViewCell.swift in Sources */,
 				3167D0051D218B4B001D9FD1 /* Post.swift in Sources */,
 				627718971B0A581700AF5C6E /* FilterViewController.swift in Sources */,
 				3167D00F1D21AE4C001D9FD1 /* ParseHelper.swift in Sources */,
@@ -667,7 +679,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = jusitnleesf.Jusitngram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinleesf.Justingram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Makestagram/Makestagram-Bridging-Header.h";
@@ -689,7 +701,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = jusitnleesf.Jusitngram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinleesf.Justingram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Makestagram/Makestagram-Bridging-Header.h";
